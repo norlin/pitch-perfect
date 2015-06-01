@@ -79,8 +79,8 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
 			if (!isRecording) {
 				// if no recording – init new one
 				isRecording = true
-				let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
 				
+				let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
 				let currentDateTime = NSDate()
 				let formatter = NSDateFormatter()
 				formatter.dateFormat = "ddMMyyyy-HHmmss"
